@@ -1,10 +1,9 @@
-@mixin contacts-theme($theme) {
+@mixin unidades-theme($theme) {
 
     $background: map-get($theme, background);
     $foreground: map-get($theme, foreground);
-    $is-dark: map-get($theme, is-dark);
 
-    #unidades {
+    unidades {
 
         .header {
 
@@ -20,19 +19,6 @@
                     input {
                         background: map-get($background, card);
                         color: map-get($foreground, text);
-                    }
-                }
-            }
-        }
-
-        .content {
-
-            .sidebar {
-
-                .sidebar-content {
-
-                    .card {
-                        background: map-get($background, card);
                     }
                 }
             }

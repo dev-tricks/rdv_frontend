@@ -2,9 +2,19 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UnidadesComponent } from './unidades.component';
 import {RouterModule} from '@angular/router';
-import {MatButtonModule, MatIconModule, MatPaginatorModule, MatSortModule, MatTableModule} from '@angular/material';
+import {
+    MatButtonModule,
+    MatChipsModule,
+    MatExpansionModule,
+    MatFormFieldModule,
+    MatIconModule,
+    MatInputModule,
+    MatPaginatorModule, MatRippleModule, MatSelectModule, MatSnackBarModule,
+    MatSortModule,
+    MatTableModule, MatTabsModule
+} from '@angular/material';
 import {FuseSharedModule} from '../../../@fuse/shared.module';
-import {FuseConfirmDialogModule, FuseSidebarModule} from '../../../@fuse/components';
+import {FuseConfirmDialogModule, FuseSidebarModule, FuseWidgetModule} from '../../../@fuse/components';
 import {UnidadesService} from './unidades.service';
 import { UnidadeListComponent } from './unidade-list/unidade-list.component';
 
@@ -19,15 +29,24 @@ const routes = [
   imports: [
     RouterModule.forChild(routes),
 
-      MatIconModule,
       MatButtonModule,
-      MatTableModule,
-      MatSortModule,
+      MatChipsModule,
+      MatExpansionModule,
+      MatFormFieldModule,
+      MatIconModule,
+      MatInputModule,
       MatPaginatorModule,
+      MatRippleModule,
+      MatSelectModule,
+      MatSortModule,
+      MatSnackBarModule,
+      MatTableModule,
+      MatTabsModule,
 
       FuseSharedModule,
       FuseConfirmDialogModule,
-      FuseSidebarModule
+      FuseSidebarModule,
+      FuseWidgetModule
   ],
     exports: [
         UnidadesComponent

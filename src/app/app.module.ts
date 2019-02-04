@@ -74,7 +74,7 @@ const appRoutes: Routes = [
         FuseThemeOptionsModule,
 
         // App modules
-        LayoutModule,
+        LayoutModule
     ],
     bootstrap   : [
         AppComponent
